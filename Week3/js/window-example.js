@@ -2,11 +2,8 @@ var myWindow = {
 	screenX: window.screenX,
 	screenY: window.screenY,
 	location: window.location.pathname,
-
-	screenw: window.screen.width,
-	screenh: window.screen.height,
-	
-	
+	screenW: window.screen.width,
+	screenZ: window.screen.height,
 
 	render: function() {
 		var ele = document.getElementById("location");
@@ -14,18 +11,15 @@ var myWindow = {
 
 		ele = document.getElementById("sx");
 		ele.value = this.screenX;
-
-	   ele = document.getElementById("sy");
+		ele = document.getElementById("sy");
 		ele.value = this.screenY;
 
-		ele = document.getElementById("ScreenW");
-		ele.value = this.screenw;
-       
-        ele = document.getElementById("ScreenHeight");
-		ele.value = this.screenh;
+		ele = document.getElementById("sw");
+		ele.value = this.screenW;
 
+		ele = document.getElementById("sz");
+		ele.value = this.screenZ;
 
-	
 	}
 };
 
